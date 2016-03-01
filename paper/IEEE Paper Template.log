@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.25)  25 FEB 2016 23:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.25)  1 MAR 2016 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -127,14 +127,13 @@ Before submitting the final camera ready copy, remember to:
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-
 ]
 (./IEEE Paper Template.aux) ) 
 Here is how much of TeX's memory you used:
- 916 strings out of 495028
- 16130 string characters out of 6181497
- 65341 words of memory out of 5000000
- 4196 multiletter control sequences out of 15000+600000
+ 914 strings out of 495028
+ 16114 string characters out of 6181497
+ 68341 words of memory out of 5000000
+ 4194 multiletter control sequences out of 15000+600000
  34143 words of font info for 63 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  26i,8n,19p,398b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -143,7 +142,7 @@ e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on "IEEE Paper Template.pdf" (1 page, 50548 bytes).
+Output written on "IEEE Paper Template.pdf" (1 page, 53245 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream

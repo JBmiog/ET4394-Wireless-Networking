@@ -389,7 +389,7 @@ Email: J.B.Miog@student.tudelft.nl}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-This paper describes a short summary of paper [1]. It reveals (...) weaknesses
+This paper describes a short summary of the paper [1]. It reveals (...) weaknesses
 and proposes (...) as a potential solution.
 \end{abstract}
 
@@ -405,12 +405,35 @@ why this paper is relevant and interesting.
 
 
 \section{Short summary}
-
-One paragraph about what you will discuss in this section.
+In paper \cite{paper1} the potential of low power sensor systems is investigated to track encounters between individual bats and to monitor their flying behavior. In more detail, the paper discusses the use of three Erasure Codes (ES) to encrease the correct reception rate. A detailed model of bat flying behavior is obtained using observations
+done by biologists. For the setup of the sensor network, a set of ground stations is used together with light weight transmitters. The transmitters are to be mounted on the bats. The flight behavior model is used to predict the probabilities of contact moments and their duration if a wireless connection is possible. The use
+of ES's is necessary because of the challenging forest environment, and the rapid bat flying behavior. As a conclusion, Reed-Solomon (RS) and Cauchy and Vandermonde (CV) ES codes seem most applicable to
+increase the reception rate. The disadvantage is the necessity to send redundant data, costing extra energy. Still, the use of RS-codes is better than using no code at all. Furthermore, it is shown that the added computational overhead can be accounted for in the light-weight sensing systems.
 
 \subsection{Weakness 1}
 
-Describe the main idea of the solution in~\cite{paper1} and the way it works. Use your own words and in case really needed you can include figures from the original paper while giving proper reference. The text has to be self contained as the reader should be able to understand the essence of the proposed approach without reading the original paper.
+
+
+worden de encounters zowieso al niet dubbel gestuurd? door beide bats
+
+de data herhalen als het verkeerd aankomt
+
+each bat-node has a rendezvous table, containing which beacons are received, and the duration of the interval.
+beacons are send each second, if received twice within 5 seconds, it assumed theere is an encounter between 
+two bats., and the duration of the encounter is stored. 
+
+"the transmission of data chunks has to be reliable
+whereas the succesfull reception of beacons is not as critical since the quantity of useful information within a beacon is comparably less than within a data cun. Therefore, ecs are used only for data chunk transmissions"
+
+data chunks are only transmitted of the rendezvous table is old enough, so hanging around a base station 
+doesn't drain the battery of the bat-node.
+
+four entries in the rendezvous table are neccessary, otherwise it would be an unfair comparison between using an EC code (adding redundancy) or no EC code. Using one bit, for example, only 0 or 100 \% redundancy is possible.
+
+enkel de data verzenden, geen extra coding
+data met minimale encoding verzenden, maar de encoding kost geen computational effort 
+data met minimale encoding verzenden, maar de encoding kost weinig computational effort
+data met encoding verzenden, maar de encoding kost teveel energie 
 
 \subsection{Potential solution 1}
 
@@ -557,11 +580,7 @@ Falko Dressler, Margt Mutschlechner, bijun Li, Rüdger Kapitza, Simon Ripperger,
 \bibitem{paper2}
 Author1 and Author2, \emph{Paper 2 title}, Full reference paper 2. 
 \bibitem{paper3}
-Author1 and Author2, \emph{Paper 3 title}, Full reference paper 3. 
-\bibitem{paper4}
-Author1 and Author2, \emph{Paper 4 title}, Full reference paper 4. 
-\bibitem{paper5}
-Author1 and Author2, \emph{Paper 5 title}, Full reference paper 5. 
+
 \end{thebibliography}
 
 \end{document}
