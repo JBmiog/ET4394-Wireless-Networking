@@ -21,3 +21,9 @@ For background information these two papers are used:
 "From Radio Telemetry to Ultra-Low Power Sensor Networks – Tracking Bats in the Wild"
 
 ##the ns3 assignemnt phrased as:
+
+What is the influance on the total data throughput when an increasing number of APs go down in a wireless network, assuming that all nodes are exchanging traffic in a continues way?
+
+ 
+
+  

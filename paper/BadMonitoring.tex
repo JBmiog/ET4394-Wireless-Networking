@@ -383,38 +383,31 @@ Email: J.B.Miog@student.tudelft.nl}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-This paper describes a short summary of the paper [1]. It reveals (...) weaknesses
-and proposes (...) as a potential solution.
+This paper describes a short summary of paper [1]. It discusses three issues and potential improvements afterwards.
 \end{abstract}
-
 
 \IEEEpeerreviewmaketitle
 
-\section{Introduction}
-
-why this paper is relevant and interesting.
-
 \section{Short summary}
 In paper \cite{paper1} the potential of low power sensor systems is investigated to track encounters between individual bats and to monitor their flying behavior. In more detail, the paper discusses the use of three Erasure Codes (EC) to increase the correct reception rate. A detailed bat flying behavior model is obtained using observations
-done by biologists. For the setup of the sensor network, a set of ground stations (GS) is used together with light weight transmitters that are to be mounted on the bats, the Bat-transmitters (BT's). The flight behavior model is used to predict how often wireless connections are available, and their windows of operation. Each BT transmites a beacon every second, upon reception of another BT, the bats are said to have had an encounter. A rendezvous-table of BT-encouters is stored, and transmitted to an GS using an EC when a connection is possible.
-The use of EC's is necessary because of the challenging forest environment combined with the rapid bat flying behavior. As a conclusion, Reed-Solomon (RS) and Cauchy and Vandermonde (CV) EC's seem most applicable to
-increase the reception rate. The disadvantage is the necessity to send redundant data, which costs extra energy. Still, the use of EC is better than using no code at all. Furthermore, it is shown that the added computational overhead can be accounted for in the light-weight transmitter systems.
+done by biologists. For the setup of the sensor network, a set of ground stations (GS) is used together with light weight transmitters that are to be mounted on the bats, the Bat-transmitters (BT's). The flight behavior model is used to predict how often wireless connections are available, and their windows of operation. Each BT transmits a beacon every second, upon reception of another BT, the bats are said to have had an encounter. A rendezvous-table of BT-encouters is stored, and transmitted to an GS using an EC if a connection is possible.
+The use of EC's is necessary because of the challenging forest environment combined with the rapid bat flying behavior. Without using the EC or replication techniques, information that is not correctly received by the GS cannot be recovered. As a conclusion, Reed-Solomon (RS) and Cauchy and Vandermonde (CV) EC's seem most applicable to increase the reception rate at a low power cost. The disadvantage is the necessity to send redundant data, which costs extra energy in comparison in using no code at all. Furthermore, it is shown that the added computational overhead can be accounted for in the light-weight transmitter systems.
 
 \subsection{Issue 1}
 
-The resting behavior of the bats in not included in the bats flying behavior model, which seems a logical thing to do. However, bats tend to sleep together in a group. Storing each encounter every 5 seconds, will result in large dataset stored in the BT system, while the table itself would not contain useful information. 
+The energy consumption in the resting state of the bats in not included in the bats flying behavior model, which seems a logical thing to do. However, bats tend to sleep together in a group. Storing each encounter every 5 seconds, will result in large dataset stored in the BT system, while the table itself would not contain useful information for the duration of the resting state of the bat. 
 
 \subsection{Issue 2} 
 
-Each BT encounter is stored in each BT involved. To further reduce the amount of data stored in each table, and to reduce the data exchanged by the BT and the GS it would be beneficial to only store the encounter in one of the two BT's rendezvous-table. 
+Each BT encounter is stored in both BT involved. To further reduce the amount of data stored in each table, and to reduce the data exchanged by the BT and the GS it would be beneficial to only store the encounter in one of the two BT's rendezvous-table, however, this option is not discussed. 
 
 \subsection{Issue 3} 
 
-It is stated that a bats body weighs about 25-30 grams, and they need to capture preys that weigh, on avarage, 10\% of the bads body weighs. if the BT weights 2 gram, the bat obviously has to capture more preys, however, this is not mentioned in the paper.  
+It is stated that a bats body weighs about 25-30 grams, and they need to capture preys that weigh on average 10\% of the bads body weighs. if the BT weights 2 gram, the bat obviously has to capture more preys, however, this is not jet taken into account.  
 
 \section{Conclusion}
 
-The choice of using EC codes is outlined in much detail, and it out outperforms  Automatic repeat requests and simply sending the packet twice. The power consumption is taken into consideration as well, looking both at computing complexity and transmitting power necessary to transmit the final data chunk.   
+The choice of using EC codes is outlined in much detail, and it indeed out outperforms  Automatic Repeat Requests and simply sending the packet twice. The power consumption is taken into consideration as well, looking both at computing complexity and transmitting power necessary to transmit the final data chunk.   
 
 
 % An example of a floating figure using the graphicx package.
@@ -543,10 +536,7 @@ The choice of using EC codes is outlined in much detail, and it out outperforms 
 \begin{thebibliography}{5}
 
 \bibitem{paper1}
-Falko Dressler, Margt Mutschlechner, bijun Li, Rüdger Kapitza, Simon Ripperger, Christopher Eibel, Benedict Herzog, Timo Hönig, and Wolfgang Schröder-Preikschat \emph{Monitoring Bats in the Wild: On Using Erasure Codes for Energy-Efficient Wireless Sensor Networks}, in ACM Transactions on Sensor Networks volume 12 Issue1, February 2016. Article No. 7
-\bibitem{paper2}
-Author1 and Author2, \emph{Paper 2 title}, Full reference paper 2. 
-\bibitem{paper3}
+Falko Dressler, Margt Mutschlechner, Bijun Li, Rüdger Kapitza, Simon Ripperger, Christopher Eibel, Benedict Herzog, Timo Hönig, and Wolfgang Schröder-Preikschat \emph{"Monitoring Bats in the Wild: On Using Erasure Codes for Energy-Efficient Wireless Sensor Networks"}, in ACM Transactions on Sensor Networks vol. 12 Issue 1 Article No. 7, February 2016. 
 
 \end{thebibliography}
 
