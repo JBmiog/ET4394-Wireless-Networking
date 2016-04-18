@@ -187,11 +187,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>file</key>
-      <value>/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/test2</value>
+      <value>/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/1200baud_2048000spersecabcdef</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1708,7 +1708,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(264, 483)</value>
+      <value>(520, 427)</value>
     </param>
     <param>
       <key>_rotation</key>
