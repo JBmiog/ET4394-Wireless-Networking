@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sat Apr 16 20:41:36 2016
+# Generated: Mon Apr 18 15:49:53 2016
 ##################################################
 
 if __name__ == '__main__':
@@ -113,23 +113,17 @@ class top_block(gr.top_block, Qt.QWidget):
         self._qtgui_time_sink_x_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_0_win)
         self.low_pass_filter_0_0 = filter.fir_filter_fff(10, firdes.low_pass(
-        	1, samp_rate, 1400, 800, firdes.WIN_HAMMING, 6.76))
+        	1, samp_rate, 1100, 800, firdes.WIN_HAMMING, 6.76))
         self.low_pass_filter_0 = filter.fir_filter_ccf(1, firdes.low_pass(
-        	1, samp_rate, 70e3, 5e3, firdes.WIN_HAMMING, 6.76))
-        self.digital_clock_recovery_mm_xx_0 = digital.clock_recovery_mm_ff(170.6, 0.001, 0.5, 1, 0.05)
-        self.digital_binary_slicer_fb_0 = digital.binary_slicer_fb()
-        self.blocks_unpacked_to_packed_xx_0 = blocks.unpacked_to_packed_bb(1, gr.GR_LSB_FIRST)
+        	1, samp_rate, 50e3, 5e3, firdes.WIN_HAMMING, 6.76))
+        self.digital_clock_recovery_mm_xx_0 = digital.clock_recovery_mm_ff(170.6, 0.00, 0.5, 0.01, 0.05)
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
         self.blocks_threshold_ff_0 = blocks.threshold_ff(0, 1, 0)
         self.blocks_multiply_xx_1 = blocks.multiply_vff(1)
         self.blocks_multiply_xx_0 = blocks.multiply_vcc(1)
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, "/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/test2", False)
-        self.blocks_file_sink_0_0 = blocks.file_sink(gr.sizeof_float*1, "/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/char_output.dat", False)
-        self.blocks_file_sink_0_0.set_unbuffered(False)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, "/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/char_output", False)
-        self.blocks_file_sink_0.set_unbuffered(False)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, "/media/jeffrey/Data/documents/wirelessnetworks/RF-captures/1200baud_2048000PijnandBuenos", False)
         self.blocks_add_const_vxx_0 = blocks.add_const_vff((-1, ))
-        self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, -230e3, 1, 0)
+        self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, 480e3, 1, 0)
         self.analog_quadrature_demod_cf_0 = analog.quadrature_demod_cf(11)
 
         ##################################################
@@ -143,10 +137,6 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_multiply_xx_1, 0), (self.blocks_add_const_vxx_0, 0))    
         self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_multiply_xx_1, 0))    
         self.connect((self.blocks_throttle_0, 0), (self.blocks_multiply_xx_0, 0))    
-        self.connect((self.blocks_unpacked_to_packed_xx_0, 0), (self.blocks_file_sink_0, 0))    
-        self.connect((self.digital_binary_slicer_fb_0, 0), (self.blocks_unpacked_to_packed_xx_0, 0))    
-        self.connect((self.digital_clock_recovery_mm_xx_0, 0), (self.blocks_file_sink_0_0, 0))    
-        self.connect((self.digital_clock_recovery_mm_xx_0, 0), (self.digital_binary_slicer_fb_0, 0))    
         self.connect((self.digital_clock_recovery_mm_xx_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
         self.connect((self.low_pass_filter_0, 0), (self.analog_quadrature_demod_cf_0, 0))    
         self.connect((self.low_pass_filter_0_0, 0), (self.blocks_multiply_xx_1, 1))    
@@ -165,8 +155,8 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate
         self.analog_sig_source_x_0.set_sampling_freq(self.samp_rate)
         self.blocks_throttle_0.set_sample_rate(self.samp_rate)
-        self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, 70e3, 5e3, firdes.WIN_HAMMING, 6.76))
-        self.low_pass_filter_0_0.set_taps(firdes.low_pass(1, self.samp_rate, 1400, 800, firdes.WIN_HAMMING, 6.76))
+        self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, 50e3, 5e3, firdes.WIN_HAMMING, 6.76))
+        self.low_pass_filter_0_0.set_taps(firdes.low_pass(1, self.samp_rate, 1100, 800, firdes.WIN_HAMMING, 6.76))
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
 
     def get_centre_freq(self):
