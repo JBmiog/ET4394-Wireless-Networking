@@ -1,0 +1,81 @@
+import matplotlib.pyplot as plt
+import scipy
+import binascii
+import re
+import os
+
+dir = os.path.dirname(__file__)
+
+#method copied from stackoverflow
+# http://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa
+def text_to_bits(text, encoding='utf-8', errors='surrogatepass'):
+    bits = bin(int(binascii.hexlify(text.encode(encoding, errors)), 16))[2:]
+    return bits.zfill(8 * ((len(bits) + 7) // 8))
+
+#method copied from stackoverflow
+# http://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa
+def text_from_bits(bits, encoding='utf-8', errors='replace'):
+    n = int(bits, 2)
+    return int2bytes(n).decode(encoding, errors)
+
+#method copied from stackoverflow
+# http://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa
+def int2bytes(i):
+    hex_string = '%x' % i
+    n = len(hex_string)
+    return binascii.unhexlify(hex_string.zfill(n + (n & 1)))
+
+def get_frame_start_and_end(data,preamble,end_of_packet_sequence):
+    return -1
+
+def get_binairy_data_from_input(data):
+    bin_data = '0b'
+    for x in range (1,len(data)):
+        if(f[x]) < 0:
+            bin_data = bin_data + '0'
+        else:
+            bin_data = bin_data + '1'
+    return bin_data
+
+def get_relative_end_of_packet(data, end_of_packet):
+    end = data.find(end_of_packet)
+    if(end ==  -1):
+        return  -1
+    else:
+        return end
+
+#filename = '../isolated_signals/Buenos_isolated_after_clock_recovery'
+dir = os.path.dirname(__file__)
+filename = os.path.join(dir, 'GNR_isolated_signals/Buenos_isolated_after_clock_recovery')
+print("hallo")
+print(filename)
+print ("reading file: %s")%filename
+
+f = scipy.fromfile(open(filename),dtype=scipy.float32)
+
+bin_data = get_binairy_data_from_input(f)
+
+print("binairy data: %s")%bin_data
+
+#preamble = text_to_bits('TMCS') + '00001000'
+preamble = text_to_bits('TMCS') 
+print("preamble sequence = %s")%preamble
+
+#packet ends with a carriege return (0x0D) and a line feed(0x0A)
+end_of_packet = "00001101" + "00001010"
+print("end of packet sequence = %s")%(end_of_packet)
+
+#found at stack overflow, efficient lookup:
+#http://stackoverflow.com/questions/4664850/find-all-occurrences-of-a-substring-in-python
+x_start_of_packet = [m.start() + (len(preamble)) for m in re.finditer(preamble, bin_data)]
+
+print("found preamble at string elements:")
+print(x_start_of_packet)
+
+for i in range(len(x_start_of_packet)):
+    rel_end = get_relative_end_of_packet(bin_data[x_start_of_packet[1]:], end_of_packet)
+    data = text_from_bits(bin_data[x_start_of_packet[1]:x_start_of_packet[1]+rel_end])
+    print data
+
+
+
