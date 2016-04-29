@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="audacity_pijnacker_decode_data" version="1.3.0" audacityversion="2.0.6" sel0="0.7745750735" sel1="0.7883007812" vpos="0" h="0.6063887833" zoom="5391.3431282674" rate="384000.0" snapto="off" selectionformat="samples">
+	<tags/>
+	<wavetrack name="" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="100000" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="524693">
+				<waveblock start="0">
+					<simpleblockfile filename="e00003ea.au" len="262144" min="-1.351756" max="0.917887" rms="0.667362"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000178.au" len="262144" min="-1.316227" max="0.991704" rms="0.664425"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e000074e.au" len="405" min="-0.740856" max="0.549124" rms="0.049844"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<labeltrack name="Label Track" numlabels="10" height="73" minimized="0" isSelected="1">
+		<label t="0.65568077" t1="0.66912825" title="0xAA"/>
+		<label t="0.66912825" t1="0.68220477" title="0xAA"/>
+		<label t="0.68229751" t1="0.69305550" title="0xAA"/>
+		<label t="0.69305550" t1="0.70576105" title="0xAA"/>
+		<label t="0.70576105" t1="0.71948676" title="0xAA"/>
+		<label t="0.71930128" t1="0.73247054" title="0x54"/>
+		<label t="0.73302699" t1="0.74563980" title="0x4D"/>
+		<label t="0.74563980" t1="0.76075662" title="0x43"/>
+		<label t="0.76075662" t1="0.77457507" title="0x53"/>
+		<label t="0.77457507" t1="0.78830078" title=""/>
+	</labeltrack>
+	<labeltrack name="Label Track" numlabels="6" height="73" minimized="0" isSelected="0">
+		<label t="0.65568077" t1="0.71804927" title="Preamble"/>
+		<label t="0.71967224" t1="0.73302699" title="T"/>
+		<label t="0.73302699" t1="0.74647447" title="M"/>
+		<label t="0.74647447" t1="0.76047840" title="C"/>
+		<label t="0.76047840" t1="0.77448233" title="S"/>
+		<label t="0.77448233" t1="0.78830078" title="0x08"/>
+	</labeltrack>
+</project>

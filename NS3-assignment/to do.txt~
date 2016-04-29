@@ -109,7 +109,42 @@ steps:
 								leuk om bash beter te leren gebruiken, vaker handig dan gnuplot
 								later eventueel ook andere scripts aanroepen voor output.
 							niet: bash script is een gedoe, output van script aanpassen?
-				- via bash scripts runnen en de output in excel tabellen gooien.		
+
+- via bash scripts runnen en de output in excel tabellen gooien.
+	- dit wordt een python script,	maar wat is 
+		stderr	standard error
+		stdout	,, output
+		stdin	,, input
+	- en hoe werken de subprocessen dan?
+		ah, dat is gewoon een process dat je in de terminal kan starten, in ons geval dus het de 
+simulatie van ns3
+	- nu dus een index van een string zoeken... 	
+	- we gebruiken wel een indicator ** voor het begin en het einde van de value
+	 	die we willen copieren
+	- waarom wordt de eersrte helft van de output wel gekopierd, en de tweede helft niet?
+	- nog steeds geen idee, iets met de '&' maar dit kan in python niet, die returned gelijk de string
+- we kunnen het ns3 programma aanpassen zodat het met een debug/to file arg kan runnen, zodat je mooi een plot kan maken. ik denk dat we dit gaan doen.
+- uiteindelijk de hele zooi in ns3 gestopt, omdat ik de ./waf output niet tussendoor wilde hebben, en het eruit te filteren met bash en python was eventjes te moeilijk.
+
+- het verslag!
+	- intro
+		- short assignment description
+		- background of ns3
+		- background of 802.11
+	- NS3
+		- history 
+		- ...?? 
+	- assignment description
+		- measuring the throughput differenence with failing AP's
+	- hypotosis
+		- less throughput if nodes per device goes up. 
+	- implementation ( in depth..-) 
+		- 
+	- results
+		- pcap? 
+	- conclusion
+		- graphs
+	- discussion
 
 
 reconfigure():
@@ -227,72 +262,50 @@ impediments:
 
 
 
+01: 1
+02: 
+03: 
+04: 4,2,1
+05: 
+06: 6,3,2
+07: 
+08: 8,4,2,1
+09: 9,3,1
+10: 10,5,2,1
+11:
+12: 12,6,3,2,1
+13:
+14: 14,7,1
+15: 15,5,1
+16: 16,8,4,2,1
+17:
+18: 18,9,6,3,2  
+19:
+20: 20,10,5,2,1
+21: 21,7,1
+22: 22,11,2,1
+23: 
+24: 24,12,8,6,4,2
+25: 25,5,1
+26: 26,13,4,2,1
+27:
+28: 28,7,2,1
+29: 
+30: 30, 15, 10, 6, 5, 3, 2, 1
+40: 20, 10, 5, 4, 2, 1
 
 
+voor het verslag:
+- wat doet tie propagationloss model, en waarom doet mijn simulatie het dan gelijk niet meer?
 
+- misschien mobility aanpassen, zodat we met elke run net iets andere output krijgen
+	- eerst eens kijken of we de .mob kunnen open?
+		- daar staat plain text in
+		- is dit steeds dezelfde?
 
-
-
-
-
-
-
-
-
-
-
-
-
-Mandy
-
-Je bent van heel ver gekomen, en hebt heel veel gevoeld,
-je levenslessen geademt, en altijd ergens op gedoelt. 
-
-Je zeilen zijn gevuld, met de wind van de mensen, voor wie je er altijd bent,
-Tussen de mensen en je idealen, vond je een stukje van jou, dat je weer herkent. 
-
-Je overziet de grote bergen, en onthoud dan elk pad,
-je verrast mij met het jou zijn, ik wou dat ik dat een beetje had.
-
-Je bent zo vaak belazerd, je veerkrachtigheid is ongekend
-Omdat je gedefinieerd wordt wanneer je opstaat, als je hard gevallen bent. 
-
-Je bent niet meer naief, geen tiener met een te groot hart,
-Je kracht overtuigd nu anderen, en dat is pas de start.  
-
-Je interne strijd, je vluchtige temperament, is nu uitgebalanceert
-Als een meester in de strijd, die doordacht het zwaard handteert. 
-
-Je mag je schipper en je schip zijn, dan ben ik de wind,
-dan hoop ik dat we samen blijven varen, opdat je nooit een haven vindt. 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- we kunnen aanpassen:
+	- mobility model,
+	- data rate
 
 
 
