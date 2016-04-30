@@ -1,0 +1,12 @@
+\chapter{Introduction}
+
+
+\section{Assignment objective} 
+The objective of this project is to receive and decode two FSK-transmitters both transmitting in the receiving frequency bandwith of a Software Defined Radio dongle. The
+transmitter modules that are being used have been build by the author in order to fulfill the degree of bachelor of applied sciences in 2013. The transceiver module is designed at, and currently produced by, T-Minus engineering B.V. The PCB contains two chips, an Atmega Arduino compatible micro controller and a transceiver chip, the Murata TRC105. The module can be connected to a computer via USB, after which a Arduino sketch can be uploaded.
+
+At the moment, this transceiver is used by ESA during the CanSat competition, in which multiple high-school teams create mini satellites the size of a soda can. The mini satellites are launched with a rocket, up to a height of 1,5 kilometer. Then, the satellites are decoupled and start descending using a parachute. During descending, measurements are being done by the mini satellite. In order to simulate a space mission as good as possible, the data of the measurements is to be wireless transmitted during the 'mission'. This wireless link has been the primary reason to develop the transmitters. 
+
+While the teams on the ground aim Yagi antenna's on their CanSat's to receive the signal, every once in a while, they don't succeed in receiving anything. The SDR is used, together with GNU-radio, to design a proof of concept, showing that multiple FSK signals can be received and decoded at one receiver. 
+
+The goal of this project is to build a receiver which can listen to the channels of each team simultaneously. After receiving, the data has to be decoded into the initial ASCII-data string.

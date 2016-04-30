@@ -1,6 +1,16 @@
 \documentclass[whitelogo]{tudelft-report}
 \usepackage{natbib}
 \usepackage{changes}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\tiny,% basic font setting
+}
+
+
 \begin{document}
 
 %% Use Roman numerals for the page numbers of the title pages and table of
@@ -50,12 +60,13 @@
 
 %% Use Arabic numerals for the page numbers of the chapters.
 \mainmatter
-
-\input{chapter-1}
 \input{introduction}
 \input{project_description} 
 \input{implementation}
 \input{results}
+\input{conclusion}
+\input{discussion}
+\input{simulation} 
 
 %% Use letters for the chapter numbers of the appendices.
 \appendix

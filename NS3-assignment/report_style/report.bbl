@@ -5,17 +5,14 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[CSM()]{CSMADevices}
+\bibitem[802()]{802_11_b}
 title.
 \newblock URL
-  \url{https://www.nsnam.org/docs/release/3.13/models/html/csma.html}.
+  \url{http://www.radio-electronics.com/info/wireless/wi-fi/ieee-802-11b.php}.
 
-\bibitem[Geim and ter Tisha(2001)]{Geim2001}
-A.~K. Geim and H.~A. M.~S. ter Tisha.
-\newblock Detection of earth rotation with a diamagnetically levitating
-  gyroscope.
-\newblock \emph{Physica B: Condensed Matter}, 294--295:\penalty0 736--739,
-  2001.
-\newblock \doi{10.1016/S0921-4526(00)00753-5}.
+\bibitem[CSM()]{CSMADevices}
+Ns-3 csma block description.
+\newblock URL
+  \url{https://www.nsnam.org/docs/release/3.13/models/html/csma.html}.
 
 \end{thebibliography}

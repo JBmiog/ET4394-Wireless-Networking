@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.17)  20 APR 2016 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.17)  30 APR 2016 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1317,6 +1317,34 @@ Package: truncate 2001/08/20  ver 3.6
 )
 \Changes@Len@summ=\skip79
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count150
+\lst@gtempboxa=\box45
+\lst@token=\toks43
+\lst@length=\count151
+\lst@currlwidth=\dimen202
+\lst@column=\count152
+\lst@pos=\count153
+\lst@lostspace=\dimen203
+\lst@width=\dimen204
+\lst@newlines=\count154
+\lst@lineno=\count155
+\lst@maxwidth=\dimen205
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count156
+\lst@skipnumbers=\count157
+\lst@framebox=\box46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 
 LaTeX Warning: Unused global option(s):
     [whitelogo].
@@ -1324,54 +1352,58 @@ LaTeX Warning: Unused global option(s):
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 4.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 4.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 14.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 4.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 4.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 4.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* detected driver: pdftex
@@ -1409,17 +1441,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
-\scratchdimen=\dimen202
-\scratchbox=\box45
-\nofMPsegments=\count151
-\nofMParguments=\count152
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count153
-\MPscratchDim=\dimen203
-\MPnumerator=\count154
-\makeMPintoPDFobject=\count155
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count158
+\scratchdimen=\dimen206
+\scratchbox=\box47
+\nofMPsegments=\count159
+\nofMParguments=\count160
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen207
+\MPnumerator=\count162
+\makeMPintoPDFobject=\count163
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1435,8 +1467,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring ON on input line 4.
+\AtBeginShipoutBox=\box48
+Package hyperref Info: Link coloring ON on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1444,19 +1476,20 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count156
+\c@section@level=\count164
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
  ABD: EveryShipout initializing macros
-\c@mv@tabular=\count157
-\c@mv@boldtabular=\count158
+\c@mv@tabular=\count165
+\c@mv@boldtabular=\count166
+\c@lstlisting=\count167
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1489,24 +1522,24 @@ LaTeX Info: Redefining \nameref on input line 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\GPT@outputbox=\box47
+\GPT@outputbox=\box49
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
-) <tank.jpg, id=27, 484.209pt x 352.1958pt>
+) <tank.jpg, id=59, 484.209pt x 352.1958pt>
 File: tank.jpg Graphic file (type jpg)
 
 <use tank.jpg>
-Package pdftex.def Info: tank.jpg used on input line 41.
+Package pdftex.def Info: tank.jpg used on input line 51.
 (pdftex.def)             Requested size: 597.50787pt x 434.6224pt.
- <cover/logo_black.pdf, id=28, 125.46875pt x 77.28876pt>
+ <cover/logo_black.pdf, id=60, 125.46875pt x 77.28876pt>
 File: cover/logo_black.pdf Graphic file (type pdf)
 
 <use cover/logo_black.pdf>
-Package pdftex.def Info: cover/logo_black.pdf used on input line 41.
+Package pdftex.def Info: cover/logo_black.pdf used on input line 51.
 (pdftex.def)             Requested size: 125.46843pt x 77.28856pt.
-LaTeX Font Info:    Try loading font information for T1+fla on input line 41.
+LaTeX Font Info:    Try loading font information for T1+fla on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lato/t1fla.fd
 File: t1fla.fd 2011/12/25 Fontinst v1.933 font definitions for T1/fla.
@@ -1580,7 +1613,7 @@ l.72 \end{titlepage}
 ifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \tableofcontents
+l.58 \tableofcontents
                       [2
 
 ] (./report.toc
@@ -1592,141 +1625,167 @@ LaTeX Font Info:    Font shape `T1/fla/bx/n' in size <10> not available
 
  [3] [4
 
-] (./chapter-2.tex
+] (./introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/t/n' will be
 (Font)              scaled to size 96.0pt on input line 1.
-) (./chapter-3.tex [1
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
+) (./transmitter.tex [1
 
 ] [2
 
 ]
 Chapter 2.
-) (./chapter-4.tex [3] [4
+<"figures/RF schematic".png, id=131, 770.12718pt x 294.34969pt>
+File: "figures/RF schematic".png Graphic file (type png)
+
+<use "figures/RF schematic".png>
+Package pdftex.def Info: "figures/RF schematic".png used on input line 7.
+(pdftex.def)             Requested size: 313.69026pt x 119.89365pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--24
+
+ []
+
+) (./receiver.tex [3 <./figures/RF schematic.png>] [4
 
 ]
 Chapter 3.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
-<figures/gnuradio_waterfall_catpure.png, id=90, 753.81625pt x 778.91pt>
+<figures/gnuradio_waterfall_catpure.png, id=142, 753.81625pt x 778.91pt>
 File: figures/gnuradio_waterfall_catpure.png Graphic file (type png)
 
 <use figures/gnuradio_waterfall_catpure.png>
 Package pdftex.def Info: figures/gnuradio_waterfall_catpure.png used on input l
 ine 11.
 (pdftex.def)             Requested size: 313.69026pt x 324.13303pt.
- [5 <./figures/gnuradio_waterfall_catpure.png (PNG copy)>]
-<figures/flowchart_play_from_file_grc.png, id=98, 966.61125pt x 433.62pt>
+
+Overfull \hbox (54.29369pt too wide) in paragraph at lines 17--18
+\T1/futs/m/n/10 sink block. The sam-pling fre-quency is set to 2.048 MSPS, whic
+h re-sults in $2\FML/futmi/m/it/10 :\T1/futs/m/n/10 048\FML/futmi/m/it/10 MSPS\
+T1/futs/m/n/10 /1200\FML/futmi/m/it/10 baud \FMS/futm/m/n/10 ^^Y \T1/futs/m/n/1
+0 1706\FML/futmi/m/it/10 samples\T1/futs/m/n/10 /\FML/futmi/m/it/10 symbol$\T1/
+futs/m/n/10 .
+ []
+
+[5 <./figures/gnuradio_waterfall_catpure.png (PNG copy)>]
+<figures/flowchart_play_from_file_grc.png, id=149, 966.61125pt x 433.62pt>
 File: figures/flowchart_play_from_file_grc.png Graphic file (type png)
 
 <use figures/flowchart_play_from_file_grc.png>
 Package pdftex.def Info: figures/flowchart_play_from_file_grc.png used on input
- line 21.
+ line 23.
 (pdftex.def)             Requested size: 313.69026pt x 140.71971pt.
 
-<figures/gnuradio_waterfall_catpure_replay.png, id=100, 752.8125pt x 702.625pt>
+<figures/gnuradio_waterfall_catpure_replay.png, id=151, 752.8125pt x 702.625pt>
 File: figures/gnuradio_waterfall_catpure_replay.png Graphic file (type png)
 <use figures/gnuradio_waterfall_catpure_replay.png>
 Package pdftex.def Info: figures/gnuradio_waterfall_catpure_replay.png used on 
-input line 31.
+input line 33.
 (pdftex.def)             Requested size: 313.69026pt x 292.78471pt.
 
+Underfull \vbox (badness 2865) has occurred while \output is active []
 
-Package caption Warning: \label without proper \caption on input line 45.
-See the caption package documentation for explanation.
-
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 38.
-
-LaTeX Warning: Reference `fig:pijnacker_isolated' on page 6 undefined on input 
-line 38.
-
-<figures/pijnacker_isolated.png, id=103, 1656.1875pt x 717.68124pt>
-File: figures/pijnacker_isolated.png Graphic file (type png)
-
-<use figures/pijnacker_isolated.png>
-Package pdftex.def Info: figures/pijnacker_isolated.png used on input line 44.
-(pdftex.def)             Requested size: 448.1309pt x 194.19266pt.
  [6 <./figures/flowchart_play_from_file_grc.png (PNG copy)> <./figures/gnuradio
 _waterfall_catpure_replay.png (PNG copy)>]
-<figures/pijnacker_quadrature_demod.png, id=114, 1498.59875pt x 518.93875pt>
-File: figures/pijnacker_quadrature_demod.png Graphic file (type png)
+<figures/buenos_isolated.png, id=162, 1656.1875pt x 717.68124pt>
+File: figures/buenos_isolated.png Graphic file (type png)
 
-<use figures/pijnacker_quadrature_demod.png>
-Package pdftex.def Info: figures/pijnacker_quadrature_demod.png used on input l
-ine 55.
+<use figures/buenos_isolated.png>
+Package pdftex.def Info: figures/buenos_isolated.png used on input line 45.
+(pdftex.def)             Requested size: 448.1309pt x 194.19266pt.
+
+<figures/buenos_quadrature_demod.png, id=164, 1498.59875pt x 518.93875pt>
+File: figures/buenos_quadrature_demod.png Graphic file (type png)
+
+<use figures/buenos_quadrature_demod.png>
+Package pdftex.def Info: figures/buenos_quadrature_demod.png used on input line
+ 55.
 (pdftex.def)             Requested size: 448.1309pt x 155.17604pt.
 
-<figures/pijnacker_q_dem_improved.png, id=116, 1527.7075pt x 531.9875pt>
-File: figures/pijnacker_q_dem_improved.png Graphic file (type png)
+<figures/buenos_q_dem_improved.png, id=166, 1527.7075pt x 531.9875pt>
+File: figures/buenos_q_dem_improved.png Graphic file (type png)
 
-<use figures/pijnacker_q_dem_improved.png>
-Package pdftex.def Info: figures/pijnacker_q_dem_improved.png used on input lin
-e 65.
+<use figures/buenos_q_dem_improved.png>
+Package pdftex.def Info: figures/buenos_q_dem_improved.png used on input line 6
+5.
 (pdftex.def)             Requested size: 448.1309pt x 156.05014pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (50.03697pt too wide) in paragraph at lines 70--71
-[]\T1/futs/m/n/10 In or-der to re-cover the clock sig-nal from the pream-ble, a
- Muller and Mueller clock re-cov-ery block $(\FML/futmi/m/it/10 Clock[]ecovery[
-]M\T1/futs/m/n/10 )$
+ [7 <./figures/buenos_isolated.png (PNG copy)> <./figures/buenos_quadrature_dem
+od.png (PNG copy)>]
+Overfull \hbox (27.27827pt too wide) in paragraph at lines 71--78
+\T1/futs/m/n/10 In or-der to re-cover the clock sig-nal from the pream-ble, a M
+uller and Mueller clock re-cov-ery block \T1/futs/m/it/10 Clock_recovery_MM
  []
 
-<figures/after_clock_rec.png, id=119, 1410.26875pt x 779.91376pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--78
+
+ []
+
+<figures/after_clock_rec.png, id=177, 1410.26875pt x 779.91376pt>
 File: figures/after_clock_rec.png Graphic file (type png)
 
 <use figures/after_clock_rec.png>
-Package pdftex.def Info: figures/after_clock_rec.png used on input line 82.
+Package pdftex.def Info: figures/after_clock_rec.png used on input line 83.
 (pdftex.def)             Requested size: 448.1309pt x 247.82813pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./figures/pijnacker_isolated.png (PNG copy)> <./figures/pijnacker_quadratur
-e_demod.png (PNG copy)>]
-<"figures/tagged burst".png, id=130, 1494.58376pt x 805.0075pt>
+ [8 <./figures/buenos_q_dem_improved.png (PNG copy)> <./figures/after_clock_rec
+.png (PNG copy)>]
+<"figures/tagged burst".png, id=186, 1494.58376pt x 805.0075pt>
 File: "figures/tagged burst".png Graphic file (type png)
 
 <use "figures/tagged burst".png>
-Package pdftex.def Info: "figures/tagged burst".png used on input line 92.
+Package pdftex.def Info: "figures/tagged burst".png used on input line 93.
 (pdftex.def)             Requested size: 448.1309pt x 241.369pt.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 107.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 116.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 116.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 119
+.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./report.bbl [8 <./figures/pijnacker_q_dem_improved.png (PNG copy)> <./figur
-es/after_clock_rec.png (PNG copy)>] [9 <./figures/tagged burst.png (PNG copy)>]
-[10
-
-])
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [9 <./figures/tagged burst.png (PNG copy)>]) (./report.bbl [10])
 \Changes@OutFile=\write6
 \openout6 = `report.soc'.
 
- [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+ [11
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 7DD8805F263BB98DD4A6B989CD2D7E1A;268.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+(rerunfilecheck)             Checksum: 9B4C20372C677D7C129DB75621AF83CC;787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 21824 strings out of 493085
- 389128 string characters out of 6136917
- 455057 words of memory out of 5000000
- 24741 multiletter control sequences out of 15000+600000
- 105390 words of font info for 87 fonts, out of 8000000 for 9000
+ 23783 strings out of 493085
+ 414735 string characters out of 6136917
+ 534119 words of memory out of 5000000
+ 26585 multiletter control sequences out of 15000+600000
+ 122175 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,66p,849b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,72p,1063b,1986s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/lato/lato-01.enc} </home/jeffrey/.texmf-var/fonts/
 pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/d
@@ -1737,10 +1796,10 @@ g.pfb></usr/share/texlive/texmf-dist/fonts/type1/google/roboto/Roboto-Thin.pfb>
 share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (17 pages, 1964291 bytes).
+Output written on report.pdf (17 pages, 2007751 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

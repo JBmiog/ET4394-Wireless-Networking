@@ -1,0 +1,24 @@
+\chapter{Transmitter}
+
+The Transceiver PCB's contain a couple of indicator LED's, a reset switch, and some other trivial components. The schematic of the RF part is depicted in \ref{fig:RFschematic}. The TRC105 is an UHF multi-channel controller, which is configured through an SPI interface by a Atmel 16u2 micro controller on thesame PCB. This micro controller, is used as a serial to SPI converter once the module is connected by USB to a computer. It is then possible to send and receive wireless data using the common serial port on the desktop.    
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"figures/RF schematic"}
+	\caption[RF-schematic]{}
+	\label{fig:RFschematic}
+\end{figure}
+
+The atmega 16u2 can be connected to an Atmega2560 used as the main processing unit in the CanSat competition. Instead of printing serial data from the main processing unit to the computer through USB, this data can now be "printed" to the transceiver module, which will wireless forward the data to another receiving transceiver, and hence, the two-way wireless link is created. 
+
+Two transceivers will be used during this project, both are set to transmitting mode only. They are named 'Buenos aires' and 'Pijnacker' respectivily. The transmitter settings are show in the table below.\\
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline   & Tx Freq & Deviation & Mode & Tx Data & baudrate & Tx power \\ 
+	\hline Buenos Aires & 432.9mHz & +/- 20kHz & FSK & 'Pijnacker' & 1200 symb/sec & -8dBm\\ 
+	\hline Pijnacker & 433.62 & +/- 20kHz & FSK & 'Buenos Aires' & 1200 symb/sec & -8dBm\\ 
+	\hline 
+\end{tabular} 
+\\\\\\
+The signal that will be transmitted will contain a preamble of 4 bytes (0xAA).  This is followed by the transmitter identifiers, which are the same for both modules. The identifier is "TMCS" (0x54, 0x4D, 0x43, 0x53), followed by a node address byte (0xXX). 
+

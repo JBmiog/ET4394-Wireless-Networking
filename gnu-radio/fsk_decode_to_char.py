@@ -44,10 +44,9 @@ def get_relative_end_of_packet(data, end_of_packet):
     else:
         return end
 
-#filename = '../isolated_signals/Buenos_isolated_after_clock_recovery'
+#filename = '../GNR_isolated_signals/Buenos_isolated_after_clock_recovery'
 dir = os.path.dirname(__file__)
 filename = os.path.join(dir, 'GNR_isolated_signals/Buenos_isolated_after_clock_recovery')
-print("hallo")
 print(filename)
 print ("reading file: %s")%filename
 
@@ -67,14 +66,14 @@ print("end of packet sequence = %s")%(end_of_packet)
 
 #found at stack overflow, efficient lookup:
 #http://stackoverflow.com/questions/4664850/find-all-occurrences-of-a-substring-in-python
-x_start_of_packet = [m.start() + (len(preamble)) for m in re.finditer(preamble, bin_data)]
+x_start_of_packet = [m.start() for m in re.finditer(preamble, bin_data)]
 
 print("found preamble at string elements:")
 print(x_start_of_packet)
 
 for i in range(len(x_start_of_packet)):
     rel_end = get_relative_end_of_packet(bin_data[x_start_of_packet[1]:], end_of_packet)
-    data = text_from_bits(bin_data[x_start_of_packet[1]:x_start_of_packet[1]+rel_end])
+    data = text_from_bits("0b11111111" + bin_data[x_start_of_packet[1]:x_start_of_packet[1]+rel_end])
     print data
 
 

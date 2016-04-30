@@ -1,0 +1,32 @@
+\chapter{Reflection and tips} 
+
+\section{About the randomness in the mobility models}
+As stated in the project assignment, the goal had been to also display reliable data by repeating the simulation and show the variance in the obtained results. Unfortunately, the randomness mobility follows the same "random path" (as observed in NetAnim) every time I run the simulation. Up to this point, the variance, which is zero, is there for
+discarded. Until the randomness issue is solved.\\
+ 
+\section{Experience with NS3}
+As my network simulation knowledge was limited to the Cisco simulators, I had expected this simulator to be a bit more user friendly. The lack of drag-and-drop GUI in NS-3 negatively effected the time needed to test some easy situations, and gain some insight in the inner workings.\\ 
+
+Both easy and complicated scenario's seem relatively complex to simulate. The simulator does not provide to the point debug information very ofter. Valid attributes for instances are uneasy to find, as you'll have to compile the code first before you can request the possible attributes using WAF. Which, to me, feels a little strange. I think most of these issues can be resolved if the NS-3 tutorial would hint to a code editor/compiling GUI.\\
+
+The Python support does not really pave the way for a smooth simulation setup, as again, errors are hard to comprehend and the cause is not always pointed out at once.\\
+
+Often, I've experienced that a trial and error approach produced best results when combined with existing pieces of code. The preferred approach of designing the simulation and implement it while trusting on debugging tools seemed futile. The compiler quickly referred to segmentation errors, and pointed to Valgrind as the solution. 
+
+\section{Project road map} 
+
+Initially, I had a hard time trying to disconnect one AP while the simulation is running, and let the stations reconfigure themselves. Unfortunately, no possible implementation is found, as NS-3 feedback often only indirectly points at the source of the problem. Therefor I had to decide to run the simulation multiple times and distribute the stations among the AP's in a hard coded fashion for each run. \\
+
+I started writing the simulation in python, but eventually I was forced to obtain a deeper knowledge of the C++ language before continuing to write the simulation. I decided to start all over again and write the whole simulation in C++. This step by step approach didn't work out smoothly.\\
+
+Lastly, I found myself in the situation in which I was modifying a pile of existing C++ examples, forcing them to act in a proper way to fulfill the simulation requirements. If one implementation did not provided the results needed, I would go on and find another example that could be extended.\\
+
+Trying to add multiple AP's to one network had been rather hard. Luckily, I came across the wifi-wired-briding.cc example, which already implemented a large part of the backbone architecture. 
+
+\section{Tips} 
+I would like to close this report stating some simple tips for future . 
+- Use C++ for implementation, python integration does offer a reliable/usable alternative jet.\\
+- Use NetAnim for animations, which will reveal that the random paths are identical  with each simulation.\\
+- Use Eclipse as code editor (and as code editor only) as it provides hints, auto completion, templates, typeId's and errors, which are invisible in other text editors. Opening Ns-3 as an eclipse project is described by Hitesh Choudhary on youtube, \url{https://www.youtube.com/watch?v=npv8gBoySyk}, who has great introduction video's to the NS-3 simulator as well. \\
+- Build upon existing code, rather than figuring everything out from the start.\\
+- Use FlowMonitor to obtain measurement results.\\

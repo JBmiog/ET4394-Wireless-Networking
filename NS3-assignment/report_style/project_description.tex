@@ -1,11 +1,21 @@
 \chapter{project description}
 
-\section{objective} 
+\section{Objective} 
 
 In this simulation, results are obtained to formulate an answer to the following question; 
-What happens to the average throughput of stations in a 802.11b network when an increasing number of Acces Points (AP's) fail? 
-During simulation, the amount of nodes stays constant, while the number of AP's decreases. The failure of an AP is mimicked by 
-redoing the simulation with an altered distribution of stations, with one AP less. 
+
+	what happens if an encreasing amount of AP fail in a network with respect to
+	- the average througput per node
+	- regarding which data rate's? 
+	- constant
+	- regarding which packet size
+	
+What happens to the average throughput of stations in a 802.11b network when an increasing number of Acces Points (AP's) fail, with
+respect to the different data rates and different packet sizes?
+
+During simulation, the amount of nodes stays constantly 30, while the number of AP's decreases. The failure of an AP is mimicked by 
+redoing the simulation with an altered distribution of stations, with one or more AP less. 
 
 \section{Hypothesis}
-As the number of nodes per AP will increase, the average throughput of all nodes is expected to decrease as well.  
+As the number of nodes per AP will increase, the average throughput of all nodes is expected to decrease. Because now, the CSMA/CA machanism backs off more often,
+having larger contention windows, which will further decrease the throughput.   

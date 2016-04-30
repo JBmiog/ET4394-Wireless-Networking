@@ -7,45 +7,45 @@ Warning--entry type for "GNU_MAILING_CLOCK_REC" isn't style-file defined
 --line 29 of file report.bib
 Warning--to sort, need author or key in GNU_MAILING_CLOCK_REC
 Warning--empty year in GNU_MAILING_CLOCK_REC
-You've used 1 entry,
+You've used 2 entries,
             2773 wiz_defined-function locations,
-            595 strings with 4994 characters,
-and the built_in function-call counts, 273 in all, are:
-= -- 23
-> -- 0
-< -- 0
-+ -- 1
-- -- 0
-* -- 18
-:= -- 29
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 3
-chr.to.int$ -- 1
-cite$ -- 5
-duplicate$ -- 15
-empty$ -- 36
-format.name$ -- 0
-if$ -- 60
+            604 strings with 5195 characters,
+and the built_in function-call counts, 738 in all, are:
+= -- 70
+> -- 21
+< -- 1
++ -- 8
+- -- 6
+* -- 54
+:= -- 100
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 2
+cite$ -- 7
+duplicate$ -- 35
+empty$ -- 75
+format.name$ -- 9
+if$ -- 158
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 12
-num.names$ -- 0
-pop$ -- 14
+missing$ -- 1
+newline$ -- 18
+num.names$ -- 4
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 2
+purify$ -- 6
 quote$ -- 0
-skip$ -- 15
+skip$ -- 31
 stack$ -- 0
-substring$ -- 3
-swap$ -- 1
+substring$ -- 30
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
+type$ -- 22
 warning$ -- 2
-while$ -- 0
+while$ -- 5
 width$ -- 0
-write$ -- 16
+write$ -- 31
 (There were 3 warnings)

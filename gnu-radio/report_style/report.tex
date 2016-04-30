@@ -1,6 +1,16 @@
 \documentclass[whitelogo]{tudelft-report}
 \usepackage{natbib}
 \usepackage{changes}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset { %
+	language=python,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\scriptsize
+}
+
 \begin{document}
 
 %% Use Roman numerals for the page numbers of the title pages and table of
@@ -40,7 +50,6 @@
 \setpagecolor{tudelft-cyan}
 \makecover[split]
 
-
 %% Include an optional title page.
 \input{title}
 
@@ -51,10 +60,9 @@
 %% Use Arabic numerals for the page numbers of the chapters.
 \mainmatter
 
-%\input{chapter-1}
-\input{chapter-2}
-\input{chapter-3}
-\input{chapter-4} 
+\input{introduction}
+\input{transmitter} 
+\input{receiver}
 %% Use letters for the chapter numbers of the appendices.
 \appendix
 

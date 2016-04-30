@@ -1,13 +1,33 @@
-\chapter{results} 
+\chapter{Results} 
 
 \section{Througput vs. Stations per Access Points}
 
-with a constant amount of stations, the following results are obtained for the 11, 5.5, 2, and 1 mbps 
-// bla bla, for various data rates?
-// 11mbps, 5.5mbps, 2mbps, 1mbps
+with a constant amount of 30 stations, the following average throughput rates are obtained for the 802.11b supported 11, 5.5, 2, and 1 Mbps data rates, with respect 
+to the throughput and the number of stations per access point. This simulation uses the random direction 2d mobility model, with 
+a constant payload size of 512 byte. the results are shown in \ref{fig:throughputvsstationsperaccesspoint}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{"figures/throughput vs stations per access point"}
+\caption[throughput vs stations per access node]{}
+\label{fig:throughputvsstationsperaccesspoint}
+\end{figure}
+
+This figure shows that when an increasing number of AP fail in the network, and the stations are divided among the remaining nodes, the average throughput goes done exponentially, for four different standard data rates. 
+
+In order to obtain a clean results, certain station/AP ratio's are omitted as these would result in stations having a fractional component in the number of stations connected to them. As can be seen in the figure, at least one station is connected to one AP, and at least two AP's are active in the network.   
+
+\section{Throughput vs. packet size}
+
+The results depicted in \ref{fig:throughputvsstationsperaccesspoint-packetsize} are obtained by setting the data rate to 11Mbps, and using the random direction 2d mobility model.Three different packet sizes, being 1472, 1000 and 500 bytes are selected for simulation. The figure shows that a larger packet size leads to a better average throughput when relatively few stations are connected to each AP. With an increasing amount of stations/AP, we see that the size of the packets does not effect the average throughput as much.\\\\    \\                                                                                                           
 
 
 
 
-\section{Throughput vs. mobility models  }
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.8\linewidth]{"figures/throughput vs stations per access point-packetsize"}
+\caption[througput vs stations per access node, for various packet sizes]{}
+\label{fig:throughputvsstationsperaccesspoint-packetsize}
+\end{figure}
 
